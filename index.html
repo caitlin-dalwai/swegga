@@ -1,0 +1,123 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Language" content="en-za" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="./styling.css">
+
+	<title>Caitlin Dalwai</title>
+
+</head>
+
+<body>
+	<div id="page">
+
+		<div id="sidebar">
+			<img id="sb" src="https://i.postimg.cc/BvHZys0y/swegga.jpg" alt="swegga">
+		</div>
+
+		<div id="banner">
+			<img id="bd" src="https://i.postimg.cc/hj0DDrh1/delivery.gif" alt="">
+		</div>
+
+		<div id="navigation">
+			<img src="https://i.postimg.cc/5tB1g35W/links.gif" alt="clickable-imgs" usemap="#navmap">
+			<map name="navmap">
+				<area shape="rect" coords="10,5,95,35" href="#" alt="Link 1">
+				<area shape="rect" coords="105,5,190,35" href="./links/service.html" alt="service">
+				<area shape="rect" coords="205,5,300,35" href="./links/products.html" alt="products">
+				<area shape="rect" coords="310,5,440,35" href="./links/status.html" alt="status">
+				<area shape="rect" coords="450,5,555,35" href="./links/contactus.html" alt="contact">
+
+			</map>
+		</div>
+
+
+
+		<div id="main">
+			<form action="orders">
+				<h1 class="caption">Product Summary</h1>
+				<table id="lin">
+					<thead>
+						<tr>
+							<th>Description</th>
+							<th>Size</th>
+							<th>Colour</th>
+							<th>Price</th>
+							<th>Quantity</th>
+							<th>Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+						<td id="siz"><a href="./links/female.html" target="_blank">Female Ski Jackets</a></td> 
+							<td>
+								<select id="size" name="Size">
+									<option value="S">Small</option>
+									<option value="M">Medium</option>
+									<option value="L">Large</option>
+								</select>
+							</td>
+							<td>
+								<select id="color" name="color">
+									<option value="R">Red</option>
+									<option value="P">Pink</option>
+									<option value="B">Black</option>
+								</select>
+							</td>
+							<td id="pr1">150.95</td>
+							<td>
+								<div class="input-group">
+									<input type="text" id="quan1" class="form-control" aria-label="Text input with radio button">
+								</div>
+							</td>
+							<td id="result1"></td>
+						</tr>
+						<tr>
+							<td id="siz"><a href="./links/male.html" target="_blank">Male Ski Jackets</a></td>
+							<td>
+								<select id="size" name="Size">
+									<option value="S">Small</option>
+									<option value="M">Medium</option>
+									<option value="L">Large</option>
+								</select>
+							</td>
+							<td>
+								<select id="color" name="color">
+									<option value="R">Red</option>
+									<option value="B">Blue</option>
+									<option value="W">White</option>
+								</select>
+							</td>
+							<td id="pr2" >180.95</td>
+							<td>
+								<div class="input-group">
+									<input type="text" id="quan2" class="form-control" aria-label="Text input with radio button">
+								</div>
+							</td>
+							<td id="result2"></td>
+						</tr>
+						<tr>
+							<td colspan="4">Click to confirm and process your order:</td>
+							<td>
+								<button class="btn2" id="rbtn" type="button" data-bs-toggle="Total" aria-expanded="false">
+									Total Price
+								</button>
+							</td>
+							<td id="result3"></td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+		</div>
+
+		<footer class="copyright">
+			<p>© 2020 Swegga Fashion – CAITLIN DALWAI</p>
+		</footer>
+	</div>
+	<script src="./index.js"></script>
+</body>
+
+</html>
